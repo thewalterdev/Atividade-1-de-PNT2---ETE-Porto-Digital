@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(62, 62, 62);
+  padding: 25px 20px;
+  border-radius: 8px;
+  row-gap: 20px;
+  min-width: 300px;
+  min-height: 400px;
+}
+
+.spotify-logo {
+  width: 130px;
+}
+
+.menu-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.menu-list-item {
+  position: relative;
+}
+
+.menu-list-item a {
+  color: white;
+  font-weight: 500;
+}
+
+.menu-list-item.selected::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #12b412;
+  top: 22px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 15px;
+}
+
+.username-input,
+.password-input {
+  width: 100%;
+  --color: white;
+  --highlight-color-focused: #12b412;
+  font-weight: 600;
+}
+
+.submit-cadastro {
+  border: 2px solid #12b412;
+  background: #12b412;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.submit-cadastro:hover {
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
